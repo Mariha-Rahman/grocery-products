@@ -1,0 +1,39 @@
+.product {
+    background-color: rgb(236, 241, 213);
+    border: 1px solid rgb(240, 190, 73);
+    border-radius: 10px;
+    position: relative;
+    height: 450px;
+}
+
+.product-info {
+    margin: 0;
+    padding: 0;
+}
+
+.cart-btn {
+    background-color: rgb(246, 180, 180);
+    border: none;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 7px;
+}
+
+.cart-btn:hover {
+    border: 1px solid rgb(234, 101, 12);
+}
+
+.cart-info {
+    margin-right: 10px;
+}
+
+.product img {
+    width: 290px;
+    height: 280px;
+    margin: 10px;
+}

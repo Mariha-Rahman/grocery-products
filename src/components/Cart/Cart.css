@@ -1,0 +1,26 @@
+.choose-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.choose-btn button {}
+
+.btn-1 {
+    background-color: rgb(20, 152, 51);
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-size: 16px;
+    margin: 8px;
+}
+
+.btn-2 {
+    background-color: rgb(4, 22, 58);
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-size: 16px;
+    margin: 0 8px;
+}
