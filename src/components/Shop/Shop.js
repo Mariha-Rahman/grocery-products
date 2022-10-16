@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { addToDb, getStoredCart } from '../../Utilities/Fackdb';
+
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css'
@@ -10,31 +12,47 @@ const Shop = () => {
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
-    //btn for cartbtn
+
+    useEffect(() => {
+        const storedOrder = getStoredCart();
+        let savedOrdere = []
+        for (const name in storedOrder) {
+            const addedProduct = products.find(product => product.name === name)
+            if (addedProduct) {
+                savedOrdere.push(addedProduct)
+            }
+        }
+        setCart(savedOrdere)
+    }, [products])
+    // btn for cartbtn
     const handlebtn = (product) => {
-        const newCart = [...cart, product]
-        setCart(newCart)
+        console.log(product.id)
+        let newCart = []
+        if (product in newCart) {
+            setCart(newCart)
+        }
+        else {
+            newCart = [...cart, product]
+            setCart(newCart)
+        }
+        addToDb(product.name)
+    }
+    const chooseOneProduct = (cart) => {
+        let newCart = []
+        for (const item of cart) {
+            newCart = [...newCart, item.name]
+        }
+        const randomProduct = Math.floor(Math.random() * newCart.length)
+        const oneProduct = newCart[randomProduct]
+        console.log(oneProduct);
     }
     //btn for remove
     const removeCart = () => {
         const newCart = []
         setCart(newCart)
     }
-    //btn for choose
-    const chooseOneProduct = (cart) => {
-        const newCart = cart
-        let array = []
-        newCart.map(p => {
-            const name = p.name;
-            const newarr = [...array, name]
-            const random = Math.random() * newarr.length
-            console.log(random)
-        })
 
 
-
-
-    }
     return (
         <div className='shop'>
             <div className='items-container'>
@@ -52,6 +70,7 @@ const Shop = () => {
 
             <div className='cart-container'>
                 <Cart
+
                     cart={cart}
                     removeCart={removeCart}
                     chooseOneProduct={chooseOneProduct}

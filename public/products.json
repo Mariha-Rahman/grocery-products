@@ -2,48 +2,56 @@
     {
         "id": "6343b5ddac61f403b4c8cf29",
         "price": "$43.04",
+        "amount": "1 pound",
         "picture": "https://purepng.com/public/uploads/large/purepng.com-pancakepancakehotcakegriddlecakeflapjack-1411528394696k798l.png",
         "name": "Chocolate Cake"
     },
     {
         "id": "6343b5dd6d394d0985b49696",
         "price": "$32.97",
+        "amount": "1 Kg",
         "picture": "https://purepng.com/public/uploads/large/purepng.com-carrotcarrotdomestic-carrotfast-growingcarrots-1701527243628fcdfq.png",
         "name": "Carrot"
     },
     {
         "id": "6343b5dd5b2e7940d7a64663",
         "price": "$79.55",
+        "amount": "1 Kg",
         "picture": "https://purepng.com/public/uploads/large/purepng.com-cabbagecabbagevegetablesgreenfoodcalenonesense-481521740200e5vca.png",
         "name": "Cauliflower"
     },
     {
         "id": "6343b5dd102c6429e7fa9647",
         "price": "$92.66",
+        "amount": "500 gram",
         "picture": "https://purepng.com/public/uploads/large/purepng.com-green-applesappleapplesfruitsweetgreen-apple-1701527187740xqcqp.png",
         "name": "Green Apple"
     },
     {
         "id": "6343b5ddd70d1ad02e6968a6",
         "price": "$63.16",
+        "amount": "1 Kg",
         "picture": "https://purepng.com/public/uploads/large/purepng.com-amaranth-leavesvegetablesspinach-amaranth-leaves-leafs-941524684589dw2ks.png",
         "name": "Palong Shak"
     },
     {
         "id": "6343b5ddf566b04636e4658f",
         "price": "$77.44",
+        "amount": "500 gram",
         "picture": "https://purepng.com/public/uploads/large/purepng.com-pancakepancakehotcakegriddlecakeflapjack-14115283893246syna.png",
         "name": "Cream Patis"
     },
     {
         "id": "6343b5dd00c239d1fe3af96f",
         "price": "$85.10",
+        "amount": "1 packet",
         "picture": "https://purepng.com/public/uploads/large/purepng.com-breadbreadslicebakedfooddeliciouseatingbreakfast-215260866350g7yg.png",
         "name": "Bread"
     },
     {
         "id": "6343b5dde5dd982157a57d3e",
         "price": "$71.36",
+        "amount": "1 kg",
         "picture": "https://purepng.com/public/uploads/large/green-grapes-sdt.png",
         "name": "Green Grapes"
     }
